@@ -1,0 +1,43 @@
+ReservationSystem keeps track of flights. It is implemented with python 2.7
+
+written entirely by Jordan Williams, jwill49@uic.edu, (805) 428-0152, University of Illinois at Chicago
+
+run by using the small bash script run.sh, flight info must be "in/inputfile1.txt", transaction info must be at "in/inputfile2.txt"
+
+The classes are:
+	1. ReservationSystem
+	2. Client
+	3. Flight
+	4. FlightPassenger
+	
+ReservationSystem implements:
+	- validation of transactional input
+	- dictionaries for flight_number => Flight, airport_codes => Flight, and passenger_name => Client, which allow fast lookup times for relatively large sets of data
+	- for space concerns, clients are automatically deleted from system when he/she has no flights reserved. This is totally design dependent, but since the idea of a "Client Account" is not developed here, I delete them
+
+Client implements:
+	- dictionary to map airport_codes => FlightPassenger, fast lookup
+
+Flight implements:
+	- a deque for an available seat roster, allowing constant time pop (seat assignment) and append (seat cancellation) operations
+	- a revenue counter to allow constant time revenue queries for output
+	- a passenger manifest which maps to FlightPassenger objects
+	- I am using prices of type float instead of int
+
+FlightPassenger:
+	- because Flight <=> Client class relation is many-many, FP acts as a linking table between the two.
+	- it allows me to abstract the process of booking (Creating a FP) and cancelling (Deleting a FP) flights
+	
+The flow of booking a flight is RS -> Client -> Flight -> create FP
+Similarly, cancelling a flight is RS -> Client -> Flight -> delete FP
+
+This abstraction and flow allows this base system to be very extensible
+
+IF YOU'RE CURIOUS:
+
+I actually had planned to implement support for "cheapest path" booking, including a Graph with airport as vertices, edges as flights with weights corresponding to price of plane ticket. A more thorough examination of the sample output and the realization that flight times were not provided led me to believe that this is not what was being asked of me. I wanted to implement Dijkstra's Algorithm (couldn't think of a good heuristic to warrant an A* search) to compute the cheapest itinerary (of 1..m flights) for a client to get from SRC to DST airports. The following problems come to mind:
+
+	1. Precompute the shortest paths for all routes and store all such relations and recompute for flights involved with flight change OR
+	2. Compute cheapest routes every booking.
+	
+The frequency of price changes really determine which case to use, this is what makes the graph dynamic in this setting. If there are more price changes than flights booked, precomputing routes may not be the best idea as cheapest paths may change frequently. At the same time, running Dijkstra for every flight booking is a very expensive task. Do we cache intermediate results and implement a routing system that will only recompute Dijkstra if any flight along the current cheapest path is changed? This is a very interesting problem but it makes sense we would not be asked to do this for a coding assessment that must be completed in 2 days. :)

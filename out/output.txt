@@ -1,0 +1,154 @@
+Flight#: G945 Number of seats available: 43
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: A243 Number of seats available: 64
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: K792 Number of seats available: 26
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: B352 Number of seats available: 50
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: A675 Number of seats available: 56
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: B350 Number of seats available: 50
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: B351 Number of seats available: 50
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: B346 Number of seats available: 50
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: T241 Number of seats available: 73
+Total seats sold: 1
+Total revenue on this flight: $100.0
+
+Passenger Name      Seat#   Price 
+KenHatch            1       $100.0
+
+Flight#: B345 Number of seats available: 45
+Total seats sold: 5
+Total revenue on this flight: $900.0
+
+Passenger Name      Seat#   Price 
+JimBean             5       $210.0
+KateHuber           1       $160.0
+JuliaMagel          4       $210.0
+JonHuber            2       $160.0
+JimHuber            0       $160.0
+
+Flight#: B347 Number of seats available: 50
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: B438 Number of seats available: 54
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: B349 Number of seats available: 50
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: J745 Number of seats available: 350
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: A792 Number of seats available: 52
+Total seats sold: 4
+Total revenue on this flight: $560.0
+
+Passenger Name      Seat#   Price 
+NancyHarris         3       $140.0
+KennethHarris       0       $140.0
+JamesHarris         2       $140.0
+CaroleHarris        1       $140.0
+
+Flight#: K128 Number of seats available: 94
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: B795 Number of seats available: 46
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: A124 Number of seats available: 49
+Total seats sold: 5
+Total revenue on this flight: $700.0
+
+Passenger Name      Seat#   Price 
+KenNygard           3       $110.0
+LindaHenry          4       $160.0
+GeorgeWashington    0       $150.0
+MikeSmith           1       $150.0
+AlfredoHatch        2       $130.0
+
+Flight#: B348 Number of seats available: 50
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+Flight#: B435 Number of seats available: 84
+Total seats sold: 0
+Total revenue on this flight: $0.0
+
+Passenger Name      Seat#   Price 
+
+
+System’s summary:
+Total Seats Sold: 15
+Total Revenue: $2260.0
