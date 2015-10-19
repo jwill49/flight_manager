@@ -8,31 +8,31 @@ _Input_ _file_ _2_ – This file has list of transactions your application has t
 _Output_ _file_ – display of your output should be in output.<extension> file in the format mentioned below
   
 ####Input assumptions:
-1. Allinputwillbecommadelimited
-2. Considerthepriceamounttobe$andoutputdisplaysummaryshould
+1. All input will be comma delimited
+2. Consider the price amount to be $ and output display summary should 
 have $ in front of the amount. Ex.: output as $45 while input was given as
 45 for the ease of coding
-3. Passengernameisasequenceofletterswithnospaces
-4. Origin&Destinationare3letterairport/citycodes
-5. Flightnumberisaletterfollowedbyasetofnumbers
+3. Passenger name is a sequence of letters with no spaces
+4. Origin & Destination are 3 letter airport / citycodes
+5. Flight number is a letter followed by a set of numbers
   
 ####Requirements:
-1. Readinputfile#1andmakeflightdetails
-2. Writeanapplicationtodooperationslistedbelow
-  a. Bookapassengeronaflight–inputfilehasnameofthepassenger followed by origin & destination
+1. Readinputfile #1 and make flight details
+2. Write an application to do operations listed below
+  a. Book a passenger on a flight – input file has name of the passenger  followed by origin & destination
     i. If a flight doesn’t exist when booking a passenger, ignore that command
-  b. Changethepriceofaseatonaflight–inputfilehastheflight number followed by the new price
+  b. Change the price of a seat on a flight – input file has the flight number  followed by the new price
     i. The future bookings made on this flight should be with new price and the earlier bookings remain with older price
   c. Cancel a booking on a flight – input file has passenger name followed by origin & destination
     i. Should refund the booked price to the customer but not the current price since the price may change any time for that flight
-  d. Displaysummaryinformationofaflight–Summarizethebelow information for each flight listed in input file 1 after all the operations listed in input file2 are over.
+  d. Display summary information of a flight – Summarize the below information  for each flight listed in input file 1 after all the operations listed in input file2 are over.
     i. Number of seats currently booked, number of seats remaining on that flight, revenue, the passenger information like name, seat number of that passenger and price they paid for that seat
-  e. DisplayEODsummary
+  e. Display EOD summary
     i. Summary of all the flights in total like number of seats and
 total revenue generated for all the flights together
-3. Readinputfile#2forlistoftransactionstoperform
-4. Processalltheoperationsmentionedintransactionsfileanddisplaythe output in a third file named output
-5. Iftherearemultipleflightsforagivenorigin&destination,pickthe cheapest flight to book a passenger
+3. Readinputfile #2 for list of transactions to perform
+4. Process all the operations mentioned in transactions file and display the  output in a third file named output
+5. If there are multiple flights for a given origin & destination, pick the  cheapest flight to book a passenger
   
 ####Output format (example output):
 #####Flight#: A124 Number of seats available: 49
